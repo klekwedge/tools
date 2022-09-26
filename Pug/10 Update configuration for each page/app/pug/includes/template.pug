@@ -1,0 +1,45 @@
+block config
+  include config.pug
+
+
+doctype html
+html
+  head(lang=lang)
+    title #{myTitle}:
+      | 
+      block title
+
+    block metatags
+      meta(charset='utf-8')
+      meta(name='description' content=myDesc)
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='IE=Edge')
+    
+    block links
+      if Bootstrap4
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet")
+      if GoogleFonts
+        link(href="https://fonts.googleapis.com/css2?family="+GoogleFonts rel="stylesheet")
+      link(href=csspath+"/style.css" rel='stylesheet')
+  body
+
+    include _header.pug
+
+    main(role='main')
+      section.jumbotron.text-center
+        .container
+          h1 #{myTitle}
+          
+          block content
+
+          a.btn.btn-primary(href="#") Main call to action
+          a.btn.btn-secondary(href="#") Secondary action
+
+    include _footer.pug
+
+    block scripts
+      if jQuery3
+        script(src="https://code.jquery.com/jquery-3.6.1.min.js")
+      if Bootstrap4
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js")
+      script(src="js/my.js")
