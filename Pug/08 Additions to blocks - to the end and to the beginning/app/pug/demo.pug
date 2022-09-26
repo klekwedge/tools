@@ -1,0 +1,22 @@
+doctype html
+html
+  head(lang="ru")
+    title
+      block title
+
+    block metatags
+      meta(charset='utf-8')
+      meta(name='description' content='Page description')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='IE=Edge')
+    
+    block links 
+      link(href="css/style.css" rel='stylesheet')
+  body
+    //- content here
+    include includes/_header.pug
+
+    block content
+
+    block addscript
+      script(src="js/my.js")

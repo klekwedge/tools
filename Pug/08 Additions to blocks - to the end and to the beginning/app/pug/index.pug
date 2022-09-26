@@ -1,0 +1,21 @@
+extends demo.pug
+
+block title
+  | Home page
+
+prepend links
+  link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet")
+
+//- append links
+//-   link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet")
+  
+
+block content
+  div.wrapper
+    h1 Home content
+
+prepend addscript
+  script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js")
+
+append addscript
+  script(src='js/slider.js')
