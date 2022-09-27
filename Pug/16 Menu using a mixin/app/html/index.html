@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Main page: !
+    </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Main desc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fankwang|Roboto|Inter" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+            </ul>
+      </div>
+    </nav>
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1>Main page</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Blanditiis sequi sit officia suscipit tenetur, ab, 
+            sunt architecto neque laudantium fugiat inventore aliquid iste 
+            placeat cumque accusamus maiores, cum doloremque doloribus!
+          </p><div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1662572498410-cd3de49404ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+      class="d-block w-100" alt="photo">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1664029933766-f20cb3a1154e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+      class="d-block w-100" alt="photo">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1630042625045-e98a7cf1cfa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+      class="d-block w-100" alt="photo">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><a class="btn btn-primary" href="#">Main call to action</a><a class="btn btn-secondary" href="#">Secondary action</a>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/my.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+      let btn = document.getElementsByClassName('btn-primary')[0];
+      
+      btn.onclick = function(){
+        btn.style.background = 'red'
+      }
+    </script>
+  </body>
+</html>
