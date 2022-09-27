@@ -1,0 +1,39 @@
+extends includes/template.pug
+
+append config
+  - var myTitle = 'Main page'
+  - var myDesc = 'Main desc'
+  - GoogleFonts += '|Inter'
+  //- - GoogleFonts = GoogleFonts.concat('|Inter')
+  - var currentUrl = 'index.html'
+
+block title
+  | !
+
+append links
+  style
+    :scss
+      ul {
+        list-style: none;
+
+        li {
+          display: inline-block;
+        }
+      } 
+
+append content
+  p.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Blanditiis sequi sit officia suscipit tenetur, ab, 
+    sunt architecto neque laudantium fugiat inventore aliquid iste 
+    placeat cumque accusamus maiores, cum doloremque doloribus!
+  include includes/slider.html
+
+append scripts
+  script(src='js/slider.js')
+  script.
+    let btn = document.getElementsByClassName('btn-primary')[0];
+
+    btn.onclick = function(){
+      btn.style.background = 'red'
+    }

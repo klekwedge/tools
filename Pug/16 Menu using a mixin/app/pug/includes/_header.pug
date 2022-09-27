@@ -1,0 +1,13 @@
+mixin menu(menu_items)
+  ul.navbar-nav.mr-auto
+    each item in menu_items
+      li.nav-item
+        a.nav-link(href=item.href class=currentUrl === item.href ? 'active' : '') #{item.title}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='#') Navbar
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    +menu([{'title': 'Home', 'href': "index.html"},
+    {'title': 'Contacts', 'href': "contact.html"}])
